@@ -1,14 +1,20 @@
-import { useState } from "react";
-import { UserProfile } from "../UserProfile/Profile";
-import user from "../UserProfile/user.json";
+import user from "../src/UserProfile/user.json";
+import stat from "../src/UserStatistics/stat.json";
 import "./App.css";
+import { UserProfile } from "./UserProfile/Profile";
+import { UserStatistics } from "./UserStatistics/Statistics";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <UserProfile user={user}></UserProfile>
+      <UserProfile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      ></UserProfile>
+      <UserStatistics stat={stat}></UserStatistics>
     </>
   );
 }
