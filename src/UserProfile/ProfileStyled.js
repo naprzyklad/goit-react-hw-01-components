@@ -6,6 +6,9 @@ const StyledProfile = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #5c5470;
+    border-radius: 15px;
+    align-items: center;
     .description {
       background: #5c5470;
       border-radius: 2rem;
@@ -23,6 +26,18 @@ const StyledProfile = styled.div`
       background: #352f44;
       color: black;
       border-radius: 15px;
+      width: 80%;
+      gap: 10px;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      li {
+        display: flex;
+        flex-direction: column;
+        .label {
+          color: ;
+        }
+      }
     }
   }
 `;

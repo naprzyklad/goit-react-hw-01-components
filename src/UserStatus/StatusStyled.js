@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 const StyledStatus = styled.div`
-
+ul{
+  padding-left: 0px;
+}
       .item {
         display: flex;
         align-items: center;
