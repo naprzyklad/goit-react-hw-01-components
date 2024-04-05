@@ -1,29 +1,32 @@
 import PropTypes from "prop-types";
+import HistoryStyled from "../UserHistory/HistoryStyled";
 
 export const UserHistory = ({ history }) => {
   return (
     <>
-      <table className="transaction-history">
-        <thead>
-          <tr>
-            <th>Type</th>
-            <th>Amount</th>
-            <th>Currency</th>
-          </tr>
-        </thead>
+      <HistoryStyled>
+        <table className="transaction-history">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Amount</th>
+              <th>Currency</th>
+            </tr>
+          </thead>
 
-        <tbody>
-          {history.map(({ id, type, amount, currency }) => {
-            return (
-              <tr key={id}>
-                <td>{type}</td>
-                <td>{amount}</td>
-                <td>{currency}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+          <tbody>
+            {history.map(({ id, type, amount, currency }) => {
+              return (
+                <tr key={id}>
+                  <td>{type}</td>
+                  <td>{amount}</td>
+                  <td>{currency}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </HistoryStyled>
     </>
   );
 };
