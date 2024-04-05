@@ -4,6 +4,8 @@ const StyledProfile = styled.div`
   .profile {
     color: black;
     height: 100%;
+    display: flex;
+    flex-direction: column;
     .description {
       background: #5c5470;
       border-radius: 2rem;
