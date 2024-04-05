@@ -12,9 +12,12 @@ const StyledProfile = styled.div`
     .description {
       background: #5c5470;
       border-radius: 2rem;
-      width: 150px;
-      height: 270px;
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      justify-content: center;
+      margin-top: 1rem;
       .avatar {
         height: 125px;
         width: 125px;
@@ -23,6 +26,8 @@ const StyledProfile = styled.div`
       }
     }
     .stats {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       background: #352f44;
       color: black;
       border-radius: 15px;
